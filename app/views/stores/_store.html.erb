@@ -1,0 +1,33 @@
+<div id="<%= dom_id store %>">
+  <% if store.shoe_image.attached? %>
+  <%= image_tag store.shoe_image, height:"200", width: "200" %>
+  <% end %>
+  <p>
+    <strong>Name:</strong>
+    <%= store.name %>
+  </p>
+
+  <p>
+    <strong>Shoe type:</strong>
+    <%= store.shoe_type %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= store.description %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    <%= store.price %>
+  </p>
+
+  <p>
+    <strong>Color:</strong>
+    <%= store.color %>
+  </p>
+  <p>
+    <%=  store.shoe_image %>
+  </p>
+
+</div>
